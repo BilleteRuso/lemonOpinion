@@ -1,0 +1,344 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+.container{
+    width: 100vw;
+    position: absolute;
+    background-color: #ffff;
+    display: flex;
+}
+
+.fondo{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+}
+
+.trampaR{
+    height: 100vh;
+    width: 10vw;
+    background-color: #0e3a6f55;
+    transform: translate(90vw, 0vh);
+    position: fixed;
+}
+
+.trampaL{
+    height: 100vh;
+    width: 10vw;
+    background-color: #0e3a6f55;
+    position: fixed;
+}
+
+.caratula{
+    width: 60vw;
+    min-height: 60vh;
+    background-color: #ffffff;
+    margin: 0vh 10vw;
+    border: 1px;
+    border-color: #a5a5a5;
+    border-style: solid;
+    padding: 10vh 10vw;
+    position: absolute;
+    z-index: 111;
+    text-align: center;
+}
+.caratula1{
+    width: 60vw;
+    height: 80vh;
+    background-color: #ffffff;
+    margin: 0vh 10vw;
+    border: 1px;
+    border-color: #a5a5a5;
+    border-style: solid;
+    padding: 10vh 10vw;
+    position: absolute;
+    z-index: 111;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.cabecera{
+    margin-bottom: 30vh;
+}
+
+.participantes{
+    margin-bottom: 30vh;
+}
+
+h2{
+    color: #000000;
+    display: block;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 4em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 150ms ease-out 0s;
+    margin: 20px 20px 20px 20px;
+}
+
+h4{
+    color: #000000;
+    display: block;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 150ms ease-out 0s;
+    margin: 20px 20px 20px 20px;
+}
+
+h5{
+    color: #000000;
+    display: block;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 150ms ease-out 0s;
+    margin: 20px 20px 20px 20px;
+}
+
+ul{
+    text-align: left;
+    font-family: "le-monde-livre-std",serif;
+    color: #202020;
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+p{
+    text-align: left;
+    font-family: "le-monde-livre-std",serif;
+    color: #202020;
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.persona{
+    text-align: center;
+}
+
+
+.navEnd{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.tituloSeccion{
+    color: #E83C38;
+    display: block;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 150ms ease-out 0s;
+    margin: 20px 20px 20px 0px;
+}
+
+.botonTitulo1{
+    font-size: 30px;
+    margin-top: 16vh;
+}
+@media (max-width: 1300px) {
+    .subMenu{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 850px) {
+   
+    .menuLeft{
+        display: none;
+    }
+
+    .main{
+        width: 100vw;
+    }
+    img{
+        width: 85vw;
+    }
+    .footer{
+        height: 21vh;
+    }
+
+    .caratula{
+        font-size: 10px;
+        line-height: 20px; 
+    }
+
+    ul{
+        padding: 0px;
+    }
+    
+}
+
+@media (max-width: 630px) {
+   
+    h1{
+        font-size: 15em;
+        letter-spacing: -30px;
+        margin: 0px;
+        transform: translate(-10px, 90px);
+    }
+
+    .titulo2{
+        font-size: 60px;
+        line-height: 30px; 
+    }
+
+    .autor{
+        margin-top: 30px;
+    }
+
+    hr{
+        margin-bottom: 40px;
+    }
+
+    img{
+        width: 90vw;
+    }
+
+    p{
+        font-size: 20px;
+        line-height: 1.5;
+        font-weight: 500;
+        padding: 0px 10px;
+        max-width: 100vw;
+    }
+
+    ul{
+        padding: 25px;
+    }
+    li{
+        font-size: 20px;
+        line-height: 1.5;
+        font-weight: 500;
+    }
+
+    main{
+        margin: 2px;
+    }
+
+    h1{
+        font-size: 10em;
+        letter-spacing: -25px;
+        transform: translate(-10px, 120px);
+    }
+
+    h2{
+        font-size: 25px;
+        line-height: 30px; 
+        margin-top: 20vh;
+        padding: 0px 5px;
+    }
+    
+    h3{
+        font-size: 30px;
+        line-height: 15px; 
+    }
+
+    h4{
+        font-size: 16px;
+        margin: 20px 0px;
+    }
+    h5{
+        font-size: 16px;
+        margin: 20px 0px;
+    }
+
+    .reconocimientoContenedor{
+        flex-direction: column;
+    }
+    .botonTitulo1{
+        font-size: 20px;
+    }
+
+    .footer{
+        height: 60vh;
+    }
+
+    .trampaB, .trampaL, .trampaR, .trampaT{
+        display: none;
+    }
+
+    .caratula{
+        width: 100vw;
+        min-height: 100vh;
+        padding: 0px;
+        margin: 0px;
+        border: none;
+    }
+    .caratula1{
+        width: 100vw;
+        min-height: 100vh;
+        padding: 0px;
+        margin: 0px;
+        border: none;
+    }
+
+    .fondo{
+        display: none;
+    }
+
+    .caratulaDesp{
+        height: 100vh;
+    }
+
+    .menuDespTitulo{
+        margin: 100px 20px 20px 20px;
+        text-align: center;
+    }
+
+    .liDesp{
+        color: #E83C38;
+        display: block;
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 17px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        line-height: 1.5;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all 150ms ease-out 0s;
+        margin: 20px;
+        text-align: center;
+    }
+    
+    .ulDesp{
+        list-style: none;
+        padding: 0px;
+    }
+    
+
+}
